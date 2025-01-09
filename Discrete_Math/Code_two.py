@@ -35,8 +35,8 @@ def format_prop(prop):
     if len(prop) == 1:
       return str(prop[0]) 
 
-    ##################################################
-    # UNARY OPERATOR (not): ##########################
+
+    # UNARY OPERATOR (not): 
     # PART 2 : PART A
     if 2 == len(prop):
         # the following two variable declarations are missing LHS #
@@ -49,8 +49,8 @@ def format_prop(prop):
         else:
             raise ValueError("Unary proposition is not not.")
 
-    ##################################################
-    # BINARY OPERATOR (and, or, if, iff, xor): #######
+
+    # BINARY OPERATOR (and, or, if, iff, xor): 
     # PART 3 : PART A
     elif 3 == len(prop):
         # the following three variable declarations are missing LHS #
@@ -78,8 +78,7 @@ def format_prop(prop):
        formatted_prop = "(%s %s %s)" % (left_prop, op, right_prop)
        return formatted_prop
 
-    ####################################################
-    # INVALID LENGTH ####################################
+    # INVALID LENGTH 
     else:
         raise ValueError("Proposition incorrect length.")
     
@@ -97,7 +96,7 @@ Returns:
 int: 0 for False, 1 for True
 '''
 def eval_prop(prop, values):
-    # BASE CASE: #####################################
+    # BASE CASE: 
         # PART 4 : PART B
 
     if 1 == len(prop):
@@ -105,8 +104,7 @@ def eval_prop(prop, values):
         atomic_prop_id = int(prop[0][1:])-1 
         return values[atomic_prop_id]
 
-    ##################################################
-    # UNARY OPERATOR (not): ##########################
+    # UNARY OPERATOR (not): 
         # PART 5 : PART B
 
     elif 2 == len(prop):
@@ -121,8 +119,7 @@ def eval_prop(prop, values):
         else:
             raise ValueError("Unary proposition is not not.")
     
-##################################################
-    # BINARY OPERATOR (and, or, if, iff, xor): #######
+    # BINARY OPERATOR (and, or, if, iff, xor): 
     # PART 6 : PART B
     elif 3 == len(prop):
         # the following three variable declarations are missing LHS #
@@ -158,10 +155,14 @@ def eval_prop(prop, values):
             return int(left != right)
 
 
-    # INVALID LENGTH ####################################
+    # INVALID LENGTH 
     else:
         raise ValueError("Proposition incorrect length.")
-    #####################################################
+  
+
+#####################################################
+        ### My Test Case ###
+#####################################################
 
 if __name__ == '__main__':
     print("---------------------------------------")

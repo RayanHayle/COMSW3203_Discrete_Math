@@ -1,6 +1,6 @@
 #/usr/bin/python
 # -*- coding: utf-8 -*-
-
+# Python Personal Mini-Project
 import random
 import sys
 

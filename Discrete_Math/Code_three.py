@@ -108,7 +108,7 @@ def is_bijective ( domain , co_domain , mapping ) :
 
 
     ######################################################################
-### DO NOT TURN IN AN ASSIGNMENT WITH ANYTHING BELOW HERE MODIFIED ###
+                ### My Test Case ###
 ######################################################################
 if __name__ == '__main__':
     print("#######################################")

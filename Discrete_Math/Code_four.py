@@ -119,7 +119,7 @@ def check_goldbach(n):
     return None
 
 
-### DO NOT TURN IN AN ASSIGNMENT WITH ANYTHING BELOW HERE MODIFIED ###
+### My Test Case ###
 if __name__ == '__main__':
     print("#######################################")
     print("Welcome to Coding 4: Number theory!")
